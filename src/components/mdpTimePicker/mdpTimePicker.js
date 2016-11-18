@@ -16,7 +16,7 @@ function TimePickerCtrl($scope, $mdDialog, time, useUtc, autoSwitch, $mdMedia) {
 
 	this.switchView = function() {
 	    self.currentView = self.currentView == self.VIEW_HOURS ? self.VIEW_MINUTES : $mdDialog.hide(vm.time.toDate());
-	};
+    };
 
 	this.setAM = function() {
         if(self.time.hours() >= 12)
